@@ -1,1 +1,13 @@
-GET https://contacts-api-62e2.onrender.com/contacts/
+# Local
+
+# GET operations
+GET localhost:8080/contacts/                          # All contacts
+GET localhost:8080/contacts/6661ac592d7a03ab5028aba4  # Specific contact
+
+
+
+# Production
+
+# GET operations
+GET https://contacts-api-62e2.onrender.com/contacts/                          # All contacts
+GET https://contacts-api-62e2.onrender.com/contacts/6661ac592d7a03ab5028aba4  # Specific contact
