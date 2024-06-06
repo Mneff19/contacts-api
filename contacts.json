@@ -1,0 +1,32 @@
+[
+    {
+        "_id": {
+            "$oid": "6661ac592d7a03ab5028aba4"
+        },
+        "firstName": "Matt",
+        "lastName": "Neff",
+        "email": "email@matt.neff",
+        "favoriteColor": "blue",
+        "birthday": "06/17/2001"
+    },
+    {
+        "_id": {
+            "$oid": "6661aca32d7a03ab5028aba5"
+        },
+        "firstName": "Jacob",
+        "lastName": "Neff",
+        "email": "email@jacob.neff",
+        "favoriteColor": "orange",
+        "birthday": "07/06/1998"
+    },
+    {
+        "_id": {
+            "$oid": "6661acce2d7a03ab5028aba6"
+        },
+        "firstName": "Grayson",
+        "lastName": "Crossley",
+        "email": "email@grayson.crossley",
+        "favoriteColor": "blue",
+        "birthday": "03/05/2002"
+    }
+]
