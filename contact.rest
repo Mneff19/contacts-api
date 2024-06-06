@@ -1,0 +1,1 @@
+GET https://contacts-api-62e2.onrender.com/contacts/
