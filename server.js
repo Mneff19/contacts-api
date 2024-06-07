@@ -6,8 +6,10 @@ dotenv.config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
 const mongodb = require('./db/connect');
-const contactRoutes = require('./routes/contact-route');
+const routes = require('./routes');
 
 /*
 * Init express and get port
@@ -27,9 +29,11 @@ app.use((req, res, next) => {
     next();
 });
 
-// Establish contact route
-app.get("/", (req, res) => { res.send('Hello world!')} ); // For testing
-app.use("/contacts", contactRoutes);
+app.use("/", routes);
+
+// API Doc Routes
+app.use('/api-docs', swaggerUi.serve);
+app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 /*
 * Connect to MongoDB, on success open the server on port
