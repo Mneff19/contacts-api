@@ -5,7 +5,7 @@
     "description": "A simple API built using Express and MongoDB that stores information for contacts.",
     "version": "1.0.0"
   },
-  "host": "contacts-api-62e2.onrender.com/",
+  "host": "contacts-api-62e2.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"

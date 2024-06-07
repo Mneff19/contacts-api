@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API',
     description: 'A simple API built using Express and MongoDB that stores information for contacts.'
   },
-  host: 'contacts-api-62e2.onrender.com/',
+  host: 'contacts-api-62e2.onrender.com',
   schemes: [
     "https"
   ],
