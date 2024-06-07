@@ -40,5 +40,36 @@ DELETE http://localhost:8080/contacts/66624833bf8ea0b9cff2fac0
 # Production
 
 # GET operations
-GET https://contacts-api-62e2.onrender.com/contacts/                          # All contacts
-GET https://contacts-api-62e2.onrender.com/contacts/6661ac592d7a03ab5028aba4  # Specific contact
+### All contacts
+GET https://contacts-api-62e2.onrender.com/contacts/
+
+### Specific contact
+GET https://contacts-api-62e2.onrender.com/contacts/6661ac592d7a03ab5028aba4
+
+# POST operations
+### New contact
+POST https://contacts-api-62e2.onrender.com/contacts/
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "API",
+    "email": "john@api.com",
+    "favoriteColor": "Green",
+    "birthday": "12/12/2012"
+}
+
+### Update contact
+PUT https://contacts-api-62e2.onrender.com/contacts/6662489a2071cd5427ff2665
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "API",
+    "email": "john@api.com",
+    "favoriteColor": "API",
+    "birthday": "12/12/2012"
+}
+
+### Update contact
+DELETE https://contacts-api-62e2.onrender.com/contacts/66624833bf8ea0b9cff2fac0
